@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0;
+            background-color: rgb(2, 8, 17);
+        }
+        header{
+            text-align: center;
+            color: white;
+            padding: 50px;
+            background-image: url(./IMAGES/mercHeaderCanvaUntitled\ design.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-shadow: 2px 2px 1px rgb(74, 26, 26);
+        }
+
+        /* Navigation Bar */
+        nav{
+            background-color: rgb(39, 37, 37);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            
+
+        }
+        nav a:hover{
+            background-color: rgb(74, 26, 26);
+        }
+        /* Active Tab in Nav Bar */
+        .activetab{
+            background-color: rgb(15, 61, 101);
+        }
+        
+        /* Banner Image */
+        .banner{
+            padding: 0;
+        }
+        .banner img{
+            width: 100%;
+            height: 500px;
+            animation: bannereffect 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        /* Banner Animation */
+        @keyframes bannereffect{
+            0%{
+                opacity: 0.3;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0.3;;
+            }
+        }
+
+        /* Main Content */
+        .content{
+            color: white;
+            padding: 25px;
+        }
+
+        /* Text on Banner */
+        .contentfloat{
+            position: absolute;
+            top: 300px;
+            width: 100%;
+            color: rgb(49, 125, 206);
+            animation: bannertexteffect 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+        /* Animation for Text on Banner */
+        @keyframes bannertexteffect{
+            0%{
+                text-shadow: 2px 2px 4px wheat;
+            }
+            50%{
+                text-shadow: 2px 2px 4px rgb(39, 98, 161);
+                color: white;
+            }
+            100%{
+                text-shadow: 2px 2px 4px wheat;
+            }
+        }
+
+        /* Text on Banner Heading*/
+        .heading{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        /* Text on Banner Quote */
+        .quote{
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* Car Grid */
+        .cargrid{
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            gap: 70px;
+            padding: 80px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        /* Car Sub Grid */
+        .carsubgrid{
+            background-color: black;
+            border: 5px solid gray;
+            border-radius: 40px;
+            margin: 100px;
+            transition: transform 0.2s;
+        }
+        .carsubgrid:hover{
+            transform: scale(1.1);
+            animation: classhovereffect 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        /* Car Sub Grid Hover Animation */
+        @keyframes classhovereffect{
+            0%{
+                border: 5px solid rgb(147, 39, 39);
+            }
+            50%{
+                border: 5px solid rgb(2, 118, 43);
+            }
+            100%{
+                border: 5px solid rgb(147, 39, 39);
+            }
+        }
+
+        /* Car Sub Grid <a> Tag */
+        .carsubgrid a{
+            text-decoration: none;
+            color: rgb(35, 64, 139);
+        }
+        /* Car Sub Grid Image */
+        .carsubgridimage{
+            position: relative;
+            height: 300px;
+            left: 30%;
+            padding: 30px;
+        }
+        /* Car Sub Grid Heading Text */
+        .classheading{
+            display: inline-block;
+            position: relative;
+            top: -30%;
+            left: 20%;
+            font-size: 60px;
+        }
+
+        /* Footer Section */
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(52, 19, 19);
+            color: whitesmoke;
+        }
+
+        /* Footer <a> Tag Links */
+        footer a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+        /* Footer Menu Section */
+        .footeralltags{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        .footeralltags div{
+            transition: transform 0.2s;
+        }
+        .footeralltags div:hover{
+            transform: scale(1.3);
+        }
+
+        /* Disclaimer */
+        footer span{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mercedes</h1>
+    </header>
+
+    <nav>
+        <a class="activetab" href="./063demosite2.html">&#8962; Home</a>
+        <a href="./063demosite2_announcement.html">Announcement</a>
+        <a href="./063demosite2_contact.html">Contact</a>
+        <a href="./063demosite2_about.html">About</a>
+        <a href="./063demosite2_prebooking.html">Pre-Booking</a>
+    </nav>
+
+    <div class="banner">
+        <img src="./IMAGES/merc1Mercedes-Facebook-Covers-FBcoverlover-facebook-cover.jpg" alt="banner" id="slider">
+
+    </div>
+
+    <div class="content">
+        <div class="contentfloat">
+            <h2 class="heading">Performance meets Pure Luxury</h2>
+            <p class="quote">
+                Where vision becomes reality.
+            </p>
+            <p class="quote">
+                Welcome to beyond.
+            </p>
+            <p class="quote">
+                Discover a world that merges cutting-edge technology with timeless luxury, designed to make every drive an unforgettable experience.
+            </p>
+        </div>
+        
+        <div class="cargrid">
+            <div class="carsubgrid">
+                <a href="./063demosite2_Sclass.html">
+                    <h1 class="classheading"><i>S - Class</i></h1>
+                    <img class="carsubgridimage" src="./IMAGES/mercSclassmercedes-benz-s-class-front-3840x2160-master16x9.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="carsubgrid">
+                <a href="./063demosite2_Cclass.html">
+                    <h1 class="classheading"><i>C - Class</i></h1>
+                    <img class="carsubgridimage" src="./IMAGES/mercCclassmercedes-c-class.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="carsubgrid">
+                <a href="./063demosite2_Gclass.html">
+                    <h1 class="classheading"><i>G - Class</i></h1>
+                    <img class="carsubgridimage" src="./IMAGES/mercGclassimages.jpg" alt="">
+                </a>
+            </div>         
+
+        </div>
+
+    </div>
+    <hr>
+
+    <footer>
+        <div class="footeralltags">
+            <div>
+                <a href="./063demosite2_contact.html">United States</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">United Kingdom</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">India</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">Spain</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">France</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">Germany</a>
+            </div>
+        </div>
+
+        <br><br>
+        <b>Disclaimer:</b>
+        <span>
+            All content is protected by copyright and other intellectual property laws and may not be copied or altered for commercial use.
+            The site may include forward-looking statements subject to risks and uncertainties, often identified by specific terms. Actual outcomes may differ, and we are not obligated to update these.
+            Links to external sites are provided, but we are not responsible for their content or accuracy.
+            Product and service details are subject to change by the manufacturer. Illustrations may show non-standard equipment, and colors can vary technically. Prices are suggested retail and may change without notice.
+            Information on this website is provided "as is" without warranty, expressed or implied. While believed to be accurate, the information may contain errors.
+        </span>
+        <br>
+        <p>&copy;Copyright claims 2026&copy;</p>
+    </footer>
+
+    <script>
+        let image=[
+            "./IMAGES/Mercedes-Benz-G-580_banner_100.jpg",
+            "./IMAGES/merc3-MBCA-resized.jpg",
+            "./IMAGES/merc4banner-mercedes-car-icon-on-260nw-2182709795.jpg",
+            "./IMAGES/merc5RotanaAutoslider003.jpg"
+
+        ];
+
+        var index=0;
+        function changeImage(){
+            index++;
+            if(index>3){
+                index=0;
+            }
+            document.getElementById("slider").src=image[index];
+        }
+        setInterval(changeImage, 3000);
+    </script>
+</body>
+</html>

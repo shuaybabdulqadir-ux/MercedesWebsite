@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes | C Class</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0;
+            background-color: black;
+        }
+        header{
+            text-align: center;
+            color: white;
+            padding: 50px;
+            background-image: url(./IMAGES/mercHeaderCanvaUntitled\ design.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-shadow: 2px 2px 1px rgb(74, 26, 26);
+        }
+
+        /* Navigation Bar */
+        nav{
+            background-color: rgb(39, 37, 37);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            
+
+        }
+        nav a:hover{
+            background-color: rgb(74, 26, 26);
+        }
+
+        /* Banner Image */
+        .banner{
+            padding: 0;
+        }
+        .banner img{
+            width: 100%;
+            height: 300px;
+            animation: slidein 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition: transform 1s;
+        }
+        /* Banner Animation */
+        @keyframes slidein{
+            0%{
+                opacity: 0.5;
+                transform: scale(0.9);
+
+            }
+            100%{
+                opacity: 1;
+                width: 100%;
+                transform: scale(1.02);
+            }
+        }
+
+        /* Main Content */
+        .content{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 25px;
+        }
+        .contentmain{
+
+        }
+
+        /* Main Image */
+        .contentmain img{
+            width: 100%;
+        }
+        /* Main Heading */
+        .heading1{
+            font-size: 60px;
+        }
+
+        /* Benefits Points / Purpose Main Div */
+        .purposemaindiv{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 20px;
+            gap: 80px;
+            margin-top: 30px;
+        }
+
+        /* Main Car Grid Heading */
+        .cargridheading{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+        /* Car Grid */
+        .cargrid{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 30px;
+            padding: 30px;
+        }
+        /* Car Sub Grid */
+        .carsubgrid{
+            padding: 10px;
+            margin: 10px;
+        }
+        .carsubgrid a{
+            text-decoration: none;
+            color: white;
+        }
+        /* Car Sub Grid Image */
+        .carsubgrid img{
+            height: 300px;
+        }
+        /* Text below Car Sub Grid Image */
+        .carsubgrid span{
+
+        }
+
+
+
+       
+
+        /* Footer Section */
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(52, 19, 19);
+            color: whitesmoke;
+        }
+
+        /* Footer <a> Tag Links */
+        footer a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+        /* Footer Menu Section */
+        .footeralltags{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        .footeralltags div{
+            transition: transform 0.2s;
+        }
+        .footeralltags div:hover{
+            transform: scale(1.3);
+        }
+
+        /* Disclaimer */
+        footer span{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mercedes</h1>
+    </header>
+
+    <nav>
+        <a href="./063demosite2.html">&#8962; Home</a>
+        <a href="./063demosite2_announcement.html">Announcement</a>
+        <a href="./063demosite2_contact.html">Contact</a>
+        <a href="./063demosite2_about.html">About</a>
+        <a href="./063demosite2_prebooking.html">Pre-Booking</a>
+    </nav>
+
+    <div class="content">
+        <br>
+        <div class="contentmain">
+            <h1 class="heading1">The C Class</h1>
+            <p>Enter the comfort zone.</p>
+            <br>
+            <img src="./IMAGES/Cclass1mercedes-benz-c-class-w206-vertical-gallery-03-1680x1260-02-2021.JPG" alt="">
+        </div>
+        
+        <div class="purposemaindiv">
+            <div class="purpose">
+                <h2>Push your limits. Or don’t.</h2>
+                <p>
+                    Take a break from the stress of everyday life. The new generation of the innovative MBUX multimedia system allows you to intuitively operate important functions by voice or touch.
+                </p>
+            </div>
+
+            <div class="purpose">
+                <h2>Innovative driving assistance systems.</h2>
+                <p>
+                    The new C-Class represents comfortable safety regardless of the road conditions, keeping you nice and relaxed.
+                </p>
+            </div>
+
+            <div class="purpose">
+                <h2>Find your inner balance. Or don’t.</h2>
+                <p>
+                   It’s important to be able to recharge your batteries after a taxing day. Experience ENERGIZING comfort control.
+                </p>
+            </div>
+
+        </div>
+        <br><hr><br>
+
+        <h2 class="cargridheading">Exterior</h2>
+        
+        <div class="cargrid">
+            <div class="carsubgrid">
+                <img src="./IMAGES/mercCclassExterior1.jpg" alt="">
+                <br>
+                <h3>The striking rear with two-section tail lights</h3>
+                <p>
+                    The LED tail lights shine with their well-conceived function, as their light intensity adjusts automatically to the light conditions.
+                </p>
+            </div>
+
+            <div class="carsubgrid">
+                <img src="./IMAGES/mercCclassExterior2.jpg" alt="">
+                <br>
+                <h3>An expressive exterior.</h3>
+                <p>
+                    The new C-Class is a sportive incarnation of luxury. It combines dynamic proportions with reduced design lines and sculptural surfaces.
+                </p>
+            </div>
+
+            <div class="carsubgrid">
+                <img src="./IMAGES/mercCclassExterior3.jpeg" alt="">
+                <br>
+                <h3>The eye-catching Night package.</h3>
+                <p>
+                    The black design elements of the optional Night package make the new C-Class even sportier and more expressive.
+                </p>
+            </div>
+
+            <div class="carsubgrid">
+                <img src="./IMAGES/mercCclassExterior4.jpeg" alt="">
+                <br>
+                <h3>More space for your life.</h3>
+                <p>
+                    The new C-Class Estate combines progressive design with a spacious interior, where function meets luxurious aesthetics.
+                </p>
+            </div>
+
+        </div>
+        <br><hr><br>
+
+        <h2 class="cargridheading">Interior</h2>
+        
+        <div class="cargrid">
+            <div class="carsubgrid">
+                <img src="./IMAGES/mercCclassInterior1.jpg" alt="">
+                <br>
+                <h3>AMBIENT LIGHTING PREMIUM PLUS</h3>
+                <p>
+                    Unique atmosphere: The ambient lighting with precise, direct lines of light provides the right lighting scene for you in almost any situation with a total of 64 colours. In the 10 colour themes, the colours can also alternate spectacularly. You can adjust the brightness in 5 levels and 4 dimming zones.
+                </p>
+            </div>
+
+            <div class="carsubgrid">
+                <img src="./IMAGES/mercCclassInterior2.jpg" alt="">
+                <br>
+                <h3>CLIMATISED FRONT SEATS</h3>
+                <p>
+                    Pleasant seat climate in all weathers: The seat ventilation system supplies the front seats with a large-area airflow, cools them down and thus also regulates moisture. In cooler weather, the seat heating quickly brings the seat surface and backrests up to a pleasant temperature.
+                </p>
+            </div>
+
+            <div class="carsubgrid">
+                <img src="./IMAGES/mercCclassInterior3-6250d6cf4451567d6ef8902a24c61820db481.jpg" alt="">
+                <br>
+                <h3>THROUGH-LOADING FEATURE</h3>
+                <p>
+                    Create space for new things: With the rear bench seat, which can be folded down electrically in a ratio of 1/3 to 2/3, you can transform the boot into a long loading area in no time at all. This makes transporting large or bulky items of luggage child's play.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+
+    <footer>
+        <div class="footeralltags">
+            <div>
+                <a href="./063demosite2_contact.html">United States</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">United Kingdom</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">India</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">Spain</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">France</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">Germany</a>
+            </div>
+        </div>
+        <br><br>
+        <b>Disclaimer:</b>
+        <span>
+            All content is protected by copyright and other intellectual property laws and may not be copied or altered for commercial use.
+            The site may include forward-looking statements subject to risks and uncertainties, often identified by specific terms. Actual outcomes may differ, and we are not obligated to update these.
+            Links to external sites are provided, but we are not responsible for their content or accuracy.
+            Product and service details are subject to change by the manufacturer. Illustrations may show non-standard equipment, and colors can vary technically. Prices are suggested retail and may change without notice.
+            Information on this website is provided "as is" without warranty, expressed or implied. While believed to be accurate, the information may contain errors.
+        </span>
+        <br>
+        <p>&copy;Copyright claims 2026&copy;</p>
+    </footer>
+
+</body>
+</html>

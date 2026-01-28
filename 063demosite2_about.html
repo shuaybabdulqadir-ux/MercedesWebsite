@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mercedes</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0;
+            background-color: black;
+        }
+        header{
+            text-align: center;
+            color: white;
+            padding: 50px;
+            background-image: url(./IMAGES/mercHeaderCanvaUntitled\ design.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-shadow: 2px 2px 1px rgb(74, 26, 26);
+        }
+
+        /* Navigation Bar */
+        nav{
+            background-color: rgb(39, 37, 37);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            
+
+        }
+        nav a:hover{
+            background-color: rgb(74, 26, 26);
+        }
+        /* Active Tab in Nav Bar */
+        .activetab{
+            background-color: rgb(15, 61, 101);
+        }
+
+        /* Main Content */
+        .content{
+            background-image: url(./IMAGES/merclogo2wp10038954.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 800px 1500px;
+            background-attachment: fixed;
+            color: white;
+            padding: 25px;
+        }
+        .contentmain{
+
+        }
+
+        /* Main Image */
+        .contentmain img{
+            width: 100%;
+        }
+        /* Main Heading */
+        .heading1{
+            font-size: 60px;
+        }
+        /* About Content Main Para */
+        .aboutmain{
+            font-size: 25px;
+        }
+
+        /* Sub Headings */
+        .heading2{
+            text-align: center;
+            margin-top: 150px;
+            color: rgb(179, 197, 245);
+        }
+
+        /* Grid content (Historical Origin) */
+        .gridcontent{
+            margin-top: 60px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            gap: 150px;
+            justify-content: space-evenly;
+        }
+        .gridsubcontent{
+            border: 2px solid rgb(179, 197, 245);
+            padding: 40px;
+            border-radius: 30px;
+            transition: transform 0.2s;
+        }
+        .gridsubcontent:hover{
+            background-color: rgb(30, 45, 96);
+            animation: hovereffect 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform: scale(1.1);
+        }
+        /* Grid Content Hover Animation */
+        @keyframes hovereffect{
+            0%{
+                border: 2px solid rgb(163, 47, 47);
+            }
+            50%{
+                border: 2px solid rgb(144, 150, 22);
+            }
+            100%{
+                border: 2px solid rgb(33, 144, 70);
+            }
+        }
+
+        /* Parabig (Mercedes Symbol) */
+        .parabig{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Last Grid */
+        .gridcontent2{
+            display: grid;
+            grid-template-columns: 300px 300px;
+            justify-content: space-evenly;
+            gap: 100px;
+
+        }
+        .parabig2{
+            font-size: 20px;
+        }
+
+        /* Footer Section */
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(52, 19, 19);
+            color: whitesmoke;
+        }
+
+        /* Footer <a> Tag Links */
+        footer a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+        /* Footer Menu Section */
+        .footeralltags{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        .footeralltags div{
+            transition: transform 0.2s;
+        }
+        .footeralltags div:hover{
+            transform: scale(1.3);
+        }
+
+        /* Disclaimer */
+        footer span{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mercedes</h1>
+    </header>
+
+    <nav>
+        <a href="./063demosite2.html">&#8962; Home</a>
+        <a href="./063demosite2_announcement.html">Announcement</a>
+        <a href="./063demosite2_contact.html">Contact</a>
+        <a class="activetab" href="./063demosite2_about.html">About</a>
+        <a href="./063demosite2_prebooking.html">Pre-Booking</a>
+    </nav>
+
+    <div class="content">
+        <br>
+        <div class="contentmain">
+            <h1 class="heading1">About Us</h1>
+            <p>At Mercedes-Benz our employees and communities are at the heart of everything we do</p>
+            <br>
+            <p class="aboutmain">
+                Mercedes-Benz, often simply referred to as Mercedes or Benz, is a German luxury automotive brand with a history that is synonymous with the invention and evolution of the automobile itself. Headquartered in Stuttgart, Baden-Württemberg, Germany, the company operates as a subsidiary of the Mercedes-Benz Group AG. Known for its slogan "The Best or Nothing," it is recognized globally as a premium manufacturer of luxury cars, vans, and, historically, heavy commercial vehicles.
+            </p>
+        </div>
+        
+        <h2 class="heading2">Historical Origins and Legacy (1886–1926)</h2>
+        <div class="gridcontent">
+            <div class="gridsubcontent">
+                <h3>The First Automobile:</h3>
+                <p>
+                    The roots of Mercedes-Benz trace back to 1886, when Karl Benz patented the Benz Patent-Motorwagen, widely regarded as the first internal combustion-powered automobile. In the same year, Gottlieb Daimler developed his own four-wheeled motorized carriage, effectively establishing the two pillars of the company.
+                </p>
+            </div>
+            <div class="gridsubcontent">
+                <h3>The Name "Mercedes":</h3>
+                <p>
+                    The name "Mercedes" originates from 1900, derived from Mercédès Jellinek, the daughter of Austrian businessman Emil Jellinek, who ordered a special, high-performance car from Daimler-Motoren-Gesellschaft (DMG). This car, the Mercedes 35 PS, was so successful that "Mercedes" became a brand name for DMG.
+                </p>
+            </div>
+            <div class="gridsubcontent">
+                <h3>The Merger:</h3>
+                <p>
+                        Due to economic instability in Germany after World War I, Benz & Cie. and DMG merged in 1926 to form Daimler-Benz AG, launching the combined brand name "Mercedes-Benz".
+                </p>
+            </div>
+        </div>
+
+        <h2 class="heading2">The Three-Pointed Star Symbol</h2>
+        <p class="parabig">
+            The famous three-pointed star, designed by Gottlieb Daimler, symbolizes the brand’s ambition for motorization in three areas: on land, on water, and in the air. The star-in-a-circle logo was formally registered in 1937 and has since become one of the most recognized symbols of quality and prestige in the world.
+        </p>
+
+        <h2 class="heading2">Engineering Prowess and Safety Leadership</h2>
+        <div class="gridcontent">
+            <div class="gridsubcontent">
+                <h3>Safety Innovations:</h3>
+                <p>
+                    The company introduced the safety body with rigid passenger cell and crumple zones in 1959. It was the first manufacturer to introduce the anti-lock braking system (ABS) in 1978 and airbags/seatbelt pretensioners in 1981.
+                </p>
+            </div>
+            <div class="gridsubcontent">
+                <h3>Key "Firsts":</h3>
+                <p>
+                    Mercedes-Benz produced the world's first series-production diesel passenger car (260 D) in 1936.
+                </p>
+            </div>
+            <div class="gridsubcontent">
+                <h3>Performance (AMG):</h3>
+                <p>
+                    The AMG division, which started as an independent tuning firm, was officially integrated into the company in 1999 (later becoming Mercedes-AMG), delivering high-performance, sport-oriented luxury vehicles.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="heading2">Modern Brand Structure and Portfolio</h2>
+        <p class="parabig2">
+            As of 2022, the company underwent a restructuring, separating its commercial vehicle business (Daimler Truck) from its passenger car and van business, which is now managed by Mercedes-Benz AG. The portfolio currently includes:
+        </p>
+        <div class="gridcontent2">
+            <div class="gridsubcontent">
+                <h3>Core Mercedes-Benz Cars:</h3>
+                <p>
+                    A, B, C, E, and S-Class sedans, coupes, and estates.
+                </p>
+            </div>
+            <div class="gridsubcontent">
+                <h3>SUVs:</h3>
+                <p>
+                    GLA, GLB, GLC, GLE, GLS, and the iconic G-Class.
+                </p>
+            </div>
+            <div class="gridsubcontent">
+                <h3>Electric (EQ):</h3>
+                <p>
+                    The EQ series (EQA, EQB, EQE, EQS) represents the brand's shift toward electric mobility, with the Vision EQXX recently setting records for range.
+                </p>
+            </div>
+            <div class="gridsubcontent">
+                <h3>Mercedes-Maybach:</h3>
+                <p>
+                    The ultra-luxury sub-brand for high-end S-Class and GLS models.
+                </p>
+            </div>
+
+        </div>
+
+        
+    </div>
+    <br><br><br>
+    <hr>
+
+    <footer>
+        <div class="footeralltags">
+            <div>
+                <a href="./063demosite2_contact.html">United States</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">United Kingdom</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">India</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">Spain</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">France</a>
+            </div>
+            <div>
+                <a href="./063demosite2_contact.html">Germany</a>
+            </div>
+        </div>
+        <br><br>
+        <b>Disclaimer:</b>
+        <span>
+            All content is protected by copyright and other intellectual property laws and may not be copied or altered for commercial use.
+            The site may include forward-looking statements subject to risks and uncertainties, often identified by specific terms. Actual outcomes may differ, and we are not obligated to update these.
+            Links to external sites are provided, but we are not responsible for their content or accuracy.
+            Product and service details are subject to change by the manufacturer. Illustrations may show non-standard equipment, and colors can vary technically. Prices are suggested retail and may change without notice.
+            Information on this website is provided "as is" without warranty, expressed or implied. While believed to be accurate, the information may contain errors.
+        </span>
+        <br>
+        <p>&copy;Copyright claims 2026&copy;</p>
+    </footer>
+
+</body>
+</html>
